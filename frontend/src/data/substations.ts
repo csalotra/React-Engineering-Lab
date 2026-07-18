@@ -1,0 +1,40 @@
+import type { Substation } from "../types/Substation";
+
+export const initialSubstations: Substation[] = [
+  {
+    id: "SUB-001",
+    name: "Toronto North",
+    region: "Ontario",
+    city: "Toronto",
+    currentLoadMW: 75,
+    maxCapacityMW: 100,
+    forecastLoadMW: 90,
+    warningThreshold: 80,
+    status: "Healthy",
+    lastUpdated: "2026-07-10T10:30:00Z",
+  },
+  {
+    id: "SUB-002",
+    name: "Ottawa East",
+    region: "Ontario",
+    city: "Ottawa",
+    currentLoadMW: 92,
+    maxCapacityMW: 100,
+    forecastLoadMW: 98,
+    warningThreshold: 80,
+    status: "Warning",
+    lastUpdated: "2026-07-10T10:35:00Z",
+  },
+  {
+    id: "SUB-003",
+    name: "Calgary West",
+    region: "Alberta",
+    city: "Calgary",
+    currentLoadMW: 55,
+    maxCapacityMW: 100,
+    forecastLoadMW: 65,
+    warningThreshold: 80,
+    status: "Healthy",
+    lastUpdated: "2026-07-10T10:40:00Z",
+  },
+];
